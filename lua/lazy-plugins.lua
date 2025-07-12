@@ -1,7 +1,7 @@
 -- [[ Configure and install plugins ]]
 --
 require('lazy').setup({
-  'NMAC427/guess-indent.nvim', -- autodetect tabstop/shiftwidth
+  --'NMAC427/guess-indent.nvim', -- autodetect tabstop/shiftwidth
   'ThePrimeagen/vim-be-good', -- vim motion games
 
   require 'custom.autopairs',
@@ -9,13 +9,13 @@ require('lazy').setup({
   require 'custom.conform',
   require 'custom.debug',
   require 'custom.gitsigns',
-
-  -- require 'custom.indent_line',
+  require 'custom.harpoon',
   require 'custom.lint',
   require 'custom.lsp-config',
   require 'custom.mini',
   require 'custom.neo-tree',
-
+  require 'custom.oil',
+  require 'custom.snacks',
   require 'custom.telescope',
   require 'custom.todo-comments',
   require 'custom.tokyo-night',
@@ -40,3 +40,4 @@ require('lazy').setup({
     },
   },
 })
+
